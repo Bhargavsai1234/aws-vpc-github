@@ -1,14 +1,11 @@
-variables "aws_region" {
+variable "aws_region" {
+  default = "us-east-1"
 }
 
-variables "vpc_cidr" {
+variable "vpc_cidr" {
+  default = "10.0.0.0/16"
 }
 
-variables "vpc_name" {
-}
-
-variables "dns_support" {
-}
-
-variables "dns_hostname" {
+variable "vpc_name" {
+  default = "github-vpc"
 }
